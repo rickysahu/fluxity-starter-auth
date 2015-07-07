@@ -61,8 +61,6 @@
     "webpack-dev-server": "^1.6.6"
   },
   "scripts": {
-    "postinstall": "npm run build",
-    "build": "gulp build",
     "start": "node ./build/app.js"
   }
 }
