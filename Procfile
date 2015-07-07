@@ -1,1 +1,1 @@
-web: ./start.js
+web: sudo node ./start.js
