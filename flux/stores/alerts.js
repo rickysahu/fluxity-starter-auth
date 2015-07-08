@@ -1,6 +1,6 @@
 'use strict';
 
-const uuid = require('node-uuid');
+var uuid = require('node-uuid');
 
 module.exports = {
   getInitialState() {
@@ -14,7 +14,7 @@ module.exports = {
       if (!alert) return;
 
       alert.id = uuid.v4();
-      let newState = this.state.concat([alert]);
+      var newState = this.state.concat([alert]);
       this.replaceState(newState);
     }
   }

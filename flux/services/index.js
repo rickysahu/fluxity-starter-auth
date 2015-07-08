@@ -1,9 +1,9 @@
 'use strict';
 
-const request = require('superagent');
-const apiUrl = process.env.API_URL;
+var request = require('superagent');
+var apiUrl = process.env.API_URL;
 
-const { places, users } = require('./dummy-data');
+var { places, users } = require('./dummy-data');
 
 module.exports.getPlaces = function(payload, cb) {
   request

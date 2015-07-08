@@ -1,14 +1,14 @@
 'use strict';
 
-const React = require('react');
-const DocumentTitle = require('react-document-title');
-const { RouteHandler } = require('react-router');
+var React = require('react');
+var DocumentTitle = require('react-document-title');
+var { RouteHandler } = require('react-router');
 
-const NavigationController = require('./NavigationController.jsx');
-const Header = require('./Header.jsx');
-const Footer = require('./Footer.jsx');
+var NavigationController = require('./NavigationController.jsx');
+var Header = require('./Header.jsx');
+var Footer = require('./Footer.jsx');
 
-const PlacesController = React.createClass({
+var PlacesController = React.createClass({
   contextTypes: {
     Flux: React.PropTypes.object.isRequired,
     RouterState: React.PropTypes.object.isRequired

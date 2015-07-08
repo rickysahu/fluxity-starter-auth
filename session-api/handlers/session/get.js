@@ -1,6 +1,6 @@
 'use strict';
 
-const passport = require('passport');
+var passport = require('passport');
 
 module.exports = function(req, res, next) {
   res.status(200).json({

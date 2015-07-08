@@ -1,9 +1,9 @@
 'use strict';
 
-const React = require('react');
-const DocumentTitle = require('react-document-title');
+var React = require('react');
+var DocumentTitle = require('react-document-title');
 
-const PlaceDetailsView = React.createClass({
+var PlaceDetailsView = React.createClass({
   propTypes: {
     data: React.PropTypes.shape({
       name: React.PropTypes.string.isRequired,

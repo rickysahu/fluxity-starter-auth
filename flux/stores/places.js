@@ -10,7 +10,7 @@ module.exports = {
   },
   handlers: {
     ADD_PLACE_TO_LIST(context, payload) {
-      let newState = this.state.data.concat([payload]);
+      var newState = this.state.data.concat([payload]);
       
       this.replaceState({
         isLoading: false,
@@ -19,13 +19,13 @@ module.exports = {
       });
     },
     REMOVE_PLACE_FROM_LIST(context, id) {
-      let place = this.state.data.slice().filter(function(place) {
+      var place = this.state.data.slice().filter(function(place) {
         return place.id === id;
       })[0];
 
       if (!place) return;
 
-      let newState = this.state.data.slice();
+      var newState = this.state.data.slice();
       newState.splice(newState.indexOf(place), 1);
       
       this.replaceState({

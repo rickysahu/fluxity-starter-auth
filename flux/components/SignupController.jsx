@@ -1,13 +1,13 @@
 'use strict';
 
-const React = require('react');
-const qs = require('qs');
-const apiUrl = process.env.API_URL;
-const successRedirect = 'http://localhost:3000/places';
+var React = require('react');
+var qs = require('qs');
+var apiUrl = process.env.API_URL;
+var successRedirect = 'http://localhost:3000/places';
 
-const SignupView = require('./SignupView.jsx');
+var SignupView = require('./SignupView.jsx');
 
-const SignUpController = React.createClass({
+var SignUpController = React.createClass({
   contextTypes: {
     Flux: React.PropTypes.object.isRequired,
     RouterState: React.PropTypes.object.isRequired

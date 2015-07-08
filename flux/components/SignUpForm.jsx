@@ -1,8 +1,8 @@
 'use strict';
 
-const React = require('react');
+var React = require('react');
 
-const SignUpForm = React.createClass({
+var SignUpForm = React.createClass({
   propTypes: {
     data: React.PropTypes.shape({
       apiUrl: React.PropTypes.string.isRequired,
@@ -30,7 +30,7 @@ const SignUpForm = React.createClass({
   },
 
   handleFormChange(name, e) {
-    let newState = {}
+    var newState = {}
     newState[name] = e.target.value;
     this.setState(newState);
   },

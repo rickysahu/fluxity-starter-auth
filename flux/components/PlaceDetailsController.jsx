@@ -1,13 +1,13 @@
 'use strict';
 
-const React = require('react');
-const Router = require('react-router');
-const DocumentTitle = require('react-document-title');
-const NotFoundView = require('./NotFoundView.jsx');
-const LoadingView = require('./LoadingView.jsx');
-const PlaceDetailsView = require('./PlaceDetailsView.jsx');
+var React = require('react');
+var Router = require('react-router');
+var DocumentTitle = require('react-document-title');
+var NotFoundView = require('./NotFoundView.jsx');
+var LoadingView = require('./LoadingView.jsx');
+var PlaceDetailsView = require('./PlaceDetailsView.jsx');
 
-const PlaceDetailsController = React.createClass({
+var PlaceDetailsController = React.createClass({
   contextTypes: {
     RouterState: React.PropTypes.object.isRequired,
     Flux: React.PropTypes.object.isRequired

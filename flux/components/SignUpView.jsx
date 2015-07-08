@@ -1,13 +1,13 @@
 'use strict';
 
-const React = require('react');
-const DocumentTitle = require('react-document-title');
-const { Link } = require('react-router');
+var React = require('react');
+var DocumentTitle = require('react-document-title');
+var { Link } = require('react-router');
 
-const AlertBox = require('./AlertBox.jsx');
-const SignUpForm = require('./SignUpForm.jsx');
+var AlertBox = require('./AlertBox.jsx');
+var SignUpForm = require('./SignUpForm.jsx');
 
-const SignUpView = React.createClass({
+var SignUpView = React.createClass({
   propTypes: {
     data: React.PropTypes.shape({
       alerts: React.PropTypes.array.isRequired,

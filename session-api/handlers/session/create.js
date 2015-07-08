@@ -1,7 +1,7 @@
 'use strict';
 
-const passport = require('passport');
-const async = require('async');
+var passport = require('passport');
+var async = require('async');
 
 module.exports = function(req, res, next) {
   passport.authenticate('local-login', function(err, user, info) {
