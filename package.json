@@ -1,6 +1,9 @@
 {
   "name": "fluxity-start-auth",
   "version": "1.0.0",
+  "engines": {
+    "node": "0.10.33"
+  },
   "private": "true",
   "description": "Isomorphic Flux and React start kit with Passport authentication",
   "author": "Eirik Vullum <evullum@gmail.com> (http://www.vullum.io/)",
