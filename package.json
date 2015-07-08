@@ -61,7 +61,7 @@
     "webpack-dev-server": "^1.6.6"
   },
   "scripts": {
-    "postinstall": "npm run build",
+    "postinstall": "npm run build --harmony",
     "build": "gulp build --harmony",
     "start": "node  --harmony ./build/start.js"
   }
